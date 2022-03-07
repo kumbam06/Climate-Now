@@ -1,6 +1,6 @@
 //
 //  WeatherData.swift
-//  weather
+//  Climate-Now
 //
 //  Created by pradeep reddy kumbam on 03/03/22.
 //

@@ -1,6 +1,6 @@
 //
 //  MyWeatherViewController.swift
-//  weather
+//  Climate-Now
 //
 //  Created by pradeep reddy kumbam on 06/03/22.
 //

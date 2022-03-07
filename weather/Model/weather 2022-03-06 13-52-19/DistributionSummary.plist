@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>weather.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>34179B99A7C0562F0EDEE3693BEBB451BFE91839</string>
+				<key>dateExpires</key>
+				<string>08/02/23</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>7N735R5XD3.kumbam.weather</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>7N735R5XD3</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>7N735R5XD3.kumbam.weather</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>weather.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>7a72fd26-2048-42be-849a-065cc999e427</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: kumbam.weather</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>7N735R5XD3</string>
+				<key>name</key>
+				<string>pradeep reddy kumbam</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

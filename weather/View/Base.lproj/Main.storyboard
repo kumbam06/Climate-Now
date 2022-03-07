@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MyWeatherViewController" customModule="weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RdX-Jv-dHb">
+                                <rect key="frame" x="20" y="44" width="335" height="345"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kBd-es-AlD">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q42-sq-ahg">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="4XQ-DQ-6gM"/>
+                                                    <constraint firstAttribute="height" constant="40" id="fGo-H1-34b"/>
+                                                </constraints>
+                                                <color key="tintColor" name="TextColor"/>
+                                                <state key="normal" image="location.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="currentLocationBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVs-6P-eqm"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5e-pU-ruj">
+                                                <rect key="frame" x="48" y="0.0" width="239" height="40"/>
+                                                <color key="backgroundColor" name="Color"/>
+                                                <color key="tintColor" name="TextColor"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjG-ek-b61">
+                                                <rect key="frame" x="295" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="h4e-vH-AfR"/>
+                                                    <constraint firstAttribute="height" constant="40" id="ks7-ux-ZrO"/>
+                                                </constraints>
+                                                <color key="tintColor" name="TextColor"/>
+                                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJl-Bh-V8W"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Upp-FA-JyD">
+                                        <rect key="frame" x="97.666666666666686" y="50" width="140" height="140"/>
+                                        <color key="tintColor" name="TextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="aB6-My-YAG"/>
+                                            <constraint firstAttribute="height" constant="140" id="bua-bf-4LK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qre-Wx-Qe6">
+                                        <rect key="frame" x="83.333333333333329" y="200" width="168.33333333333337" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSH-Xn-bSN">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGh-ST-wGk">
+                                                <rect key="frame" x="81.000000000000014" y="0.0" width="32.333333333333329" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv9-Vg-8He">
+                                                <rect key="frame" x="113.33333333333331" y="0.0" width="55" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Y4f-YC-DVe"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyderabad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GB5-tb-N6E">
+                                        <rect key="frame" x="96" y="310" width="143" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="RdX-Jv-dHb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7WZ-Sd-zIl"/>
+                            <constraint firstItem="RdX-Jv-dHb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ooc-kC-OHj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RdX-Jv-dHb" secondAttribute="trailing" constant="20" id="TCo-pF-Afh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RdX-Jv-dHb" secondAttribute="bottom" multiplier="2" id="d2O-Be-Pqz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="GB5-tb-N6E" id="DYc-ke-A8v"/>
+                        <outlet property="conditionImageView" destination="Upp-FA-JyD" id="d4Q-DZ-Rxh"/>
+                        <outlet property="searchTextField" destination="j5e-pU-ruj" id="FC2-Tq-XkR"/>
+                        <outlet property="tempLabl" destination="wSH-Xn-bSN" id="eP1-EL-yg6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-340" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="124"/>
+        <namedColor name="Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
